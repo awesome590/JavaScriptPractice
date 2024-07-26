@@ -45,3 +45,27 @@ function calcTime(sec) {
     return '0' + mins + ':' + '0' + secs
 }
 console.log(calcTime(505))
+
+function getMax(arrray) {
+    let num = arrray[0]
+    for (let i = 0; i < arrray.length; ++i) {
+        if (arrray[i] > num) {
+            num = arrray[i]
+        }
+    }
+    return num
+}
+console.log(getMax([4, 8, 3, 5]))
+
+function reverseString(string) {
+    let split = string.split('')
+    let reverse = split.reverse()
+    let join = reverse.join('')
+    return join
+}
+console.log(reverseString('yo wassup'))
+
+function converToZeros(array2) {
+    return array2.map(elem => {return 0})
+}
+console.log(converToZeros([2,3,4]))
